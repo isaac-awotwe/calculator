@@ -1,3 +1,6 @@
+# import logo from art
+from art import logo
+
 # Define function for the arithmetic operations - add, subtract, multipky, and divide
 
 def add(n1, n2):
@@ -30,6 +33,8 @@ def print_operations():
 continue_calculator = True
 continue_with_result = 'n'
 
+print(logo)
+
 while continue_calculator == True:
     first_number = float(input("What's the first number?:  "))
     print_operations()
@@ -40,6 +45,7 @@ while continue_calculator == True:
     continue_with_result = input(f"Type 'y' to continue calculating with {result}, or type 'n' to start a new calculation:  ").lower()
     if continue_with_result == "n":
         print("\n" * 100)
+        print(logo)
     while continue_with_result == 'y':
         first_number = result
         print_operations()
@@ -50,4 +56,5 @@ while continue_calculator == True:
         continue_with_result = input(f"Type 'y' to continue calculating with {result}, or type 'n' to start a new calculation:  ").lower()
         if continue_with_result == "n":
             print("\n"*100)
+            print(logo)
 
