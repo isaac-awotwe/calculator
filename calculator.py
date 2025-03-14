@@ -23,12 +23,9 @@ operations = {
     "/":divide,
 }
 
-# print(operations["*"](4, 8))
-
 def print_operations():
     for key in operations:
         print(key)
-
 
 continue_calculator = True
 continue_with_result = 'n'
